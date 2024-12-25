@@ -1,0 +1,114 @@
+/* Styling for the container holding QR codes */
+.qr-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Styling for individual QR code boxes */
+.qr-box {
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for QR code boxes */
+.qr-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for QR code canvas */
+.qr-box canvas {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Styling for the input container */
+.input-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styling for the input field */
+.input-container input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+/* Styling for the generate button */
+.input-container button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for the generate button */
+.input-container button:hover {
+    background-color: #218838;
+}
+
+/* Static QR sample section */
+.static-sample {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.static-sample h2 {
+    margin-bottom: 10px;
+}
+
+.download-qr {
+    background: var(--custom-btn-bg-color);
+    border: 1px solid #fff !important;
+    border: none;
+    padding:13px 16px;
+    border-radius: var(--border-radius-large);
+    color: var(--white-color);
+    font-family: var(--title-font-family);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-semibold);
+    transition: all 0.3s;
+    margin-bottom: 0;
+}
+
+.download-qr:hover{
+    background: #13547a;
+    border: none !important;
+}
+
+abbr.no-style {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+  }
+
+
+  #successPopup {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 9999;
+    display: none;
+}
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: bold;
+}
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
